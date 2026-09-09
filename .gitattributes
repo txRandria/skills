@@ -1,0 +1,5 @@
+# Les SKILL.md doivent rester en LF : un \r casse l'analyse de l'en-tete YAML
+*.md text eol=lf
+*.sh text eol=lf
+*.ps1 text eol=crlf
+LICENSE text eol=lf
