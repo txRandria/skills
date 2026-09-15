@@ -12,7 +12,7 @@ Six open-source Claude Code skills for secure coding, Docker, Terraform, CI/CD p
 
 Most security guidance checks whether a rule exists in source code or configuration. This project checks whether the protection actually works at runtime: whether the container is really non-root, whether traffic crosses the firewall chain, whether a rotated credential is truly invalid, and whether a scanner finding is unique and actionable.
 
-Created by **[Tahina Fabien](https://github.com/txRandria)**, a DevOps & Cloud Engineer based in Madagascar and open to international remote opportunities.
+Created by **[Tahina Fabien RANDRIAMAMPIANINA](https://www.linkedin.com/in/fabien-tahina-8317b7344/)**, a DevOps & Cloud Engineer based in Madagascar and open to international remote opportunities · [GitHub @txRandria](https://github.com/txRandria).
 
 If this project helps your team, please give it a star and share concrete feedback through [GitHub Issues](https://github.com/txRandria/skills/issues).
 
