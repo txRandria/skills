@@ -11,7 +11,7 @@ Ils vérifient l’effet réellement obtenu plutôt que la simple présence d’
 
 > Security-first Claude Code skills for secure coding, Docker, Terraform, CI/CD and Linux server audits — validated through observable controls.
 
-**Auteur : [Tahina Fabien](https://github.com/txRandria)** — DevOps & Cloud Engineer basé à Madagascar, ouvert aux opportunités internationales en télétravail.
+**Auteur : [Tahina Fabien RANDRIAMAMPIANINA](https://www.linkedin.com/in/fabien-tahina-8317b7344/)** — DevOps & Cloud Engineer basé à Madagascar, ouvert aux opportunités internationales en télétravail · [GitHub @txRandria](https://github.com/txRandria).
 
 Si ce projet vous est utile, vous pouvez le soutenir avec une ⭐ et partager vos retours dans les [issues](https://github.com/txRandria/skills/issues).
 
