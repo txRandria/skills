@@ -1,10 +1,19 @@
-# Skills de sécurité pour Claude Code
+# Skills de sécurité vérifiable pour Claude Code
 
-Six skills qui font écrire du code, des conteneurs, de l'infrastructure et des
-pipelines **sécurisés par défaut** — et qui vérifient l'effet obtenu, pas
-l'intention déclarée.
+[**English**](README.en.md) · **Français**
 
-Écrits par **Tahina Fabien**. Licence [CC BY 4.0](LICENSE).
+![Claude Code](https://img.shields.io/badge/Claude_Code-Skills-6D5DFF)
+![DevSecOps](https://img.shields.io/badge/DevSecOps-security--by--default-0A7B83)
+![License](https://img.shields.io/badge/license-CC_BY_4.0-blue)
+
+**Six skills open source pour sécuriser le code, Docker, Terraform, les pipelines CI/CD et les audits de serveurs.**
+Ils vérifient l’effet réellement obtenu plutôt que la simple présence d’une configuration.
+
+> Security-first Claude Code skills for secure coding, Docker, Terraform, CI/CD and Linux server audits — validated through observable controls.
+
+**Auteur : [Tahina Fabien](https://github.com/txRandria)** — DevOps & Cloud Engineer basé à Madagascar, ouvert aux opportunités internationales en télétravail.
+
+Si ce projet vous est utile, vous pouvez le soutenir avec une ⭐ et partager vos retours dans les [issues](https://github.com/txRandria/skills/issues).
 
 ---
 
