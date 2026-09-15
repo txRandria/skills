@@ -1,0 +1,79 @@
+name: Validate skills
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Validate skill entry points
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          mapfile -t skill_files < <(
+            find . -mindepth 2 -maxdepth 2 -type f -name SKILL.md -print | sort
+          )
+
+          if [[ "${#skill_files[@]}" -ne 6 ]]; then
+            echo "Expected 6 SKILL.md files, found ${#skill_files[@]}"
+            exit 1
+          fi
+
+          for file in "${skill_files[@]}"; do
+            echo "Checking $file"
+
+            if LC_ALL=C grep -q $'\r' "$file"; then
+              echo "CRLF detected in $file"
+              exit 1
+            fi
+
+            if [[ "$(head -n 1 "$file")" != "---" ]]; then
+              echo "Missing opening YAML delimiter in $file"
+              exit 1
+            fi
+
+            if [[ "$(grep -c '^---$' "$file")" -lt 2 ]]; then
+              echo "Missing closing YAML delimiter in $file"
+              exit 1
+            fi
+
+            grep -q '^name: ' "$file" || {
+              echo "Missing name in $file"
+              exit 1
+            }
+
+            grep -q '^description: ' "$file" || {
+              echo "Missing description in $file"
+              exit 1
+            }
+
+            declared_name="$(sed -n 's/^name: //p' "$file" | head -n 1)"
+            directory_name="$(basename "$(dirname "$file")")"
+
+            if [[ "$declared_name" != "$directory_name" ]]; then
+              echo "Skill name '$declared_name' does not match directory '$directory_name'"
+              exit 1
+            fi
+          done
+
+      - name: Validate documented skill links
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          for skill in             secure-coding             secure-docker             secure-terraform             secure-cicd             server-security-audit             security-audit-review
+          do
+            test -f "$skill/SKILL.md"
+            grep -q "($skill/)" README.md
+            grep -q "($skill/)" README.en.md
+          done
