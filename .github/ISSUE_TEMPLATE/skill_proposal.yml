@@ -1,0 +1,41 @@
+name: Propose a new security skill
+description: Suggest a focused, evidence-based skill for an AI coding environment
+title: "[Skill]: "
+labels:
+  - enhancement
+  - skill-proposal
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Proposed skill name
+      description: Use a short, lowercase, hyphen-separated name.
+      placeholder: secure-kubernetes
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Describe the concrete security workflow or failure mode this skill should address.
+    validations:
+      required: true
+  - type: textarea
+    id: audience
+    attributes:
+      label: Intended users and stack
+      description: Name the target users, platforms, frameworks, and tools.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: References and validation plan
+      description: Link to authoritative references and explain how commands or examples can be validated.
+    validations:
+      required: true
+  - type: textarea
+    id: outline
+    attributes:
+      label: Suggested outline
+      description: List the key rules, examples, and limitations the skill should contain.

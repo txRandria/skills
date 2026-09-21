@@ -1,0 +1,54 @@
+name: Report incorrect or unsafe guidance
+description: Report a reproducible problem in a skill, command, reference, or installation flow
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for improving the project. Do not include passwords, API keys, tokens, private infrastructure details, or live exploit payloads.
+  - type: input
+    id: skill
+    attributes:
+      label: Affected skill or file
+      description: For example, secure-docker/SKILL.md
+      placeholder: secure-docker/SKILL.md
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is incorrect or unsafe?
+      description: Describe the observed behavior and the security or usability impact.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Provide a minimal, sanitized example.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected safer behavior
+      description: Explain what you expected and, if known, suggest a safer alternative.
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Potential impact
+      options:
+        - Documentation or usability only
+        - Incorrect implementation guidance
+        - Potential security weakness
+        - Sensitive - I will report privately
+    validations:
+      required: true

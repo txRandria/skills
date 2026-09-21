@@ -1,0 +1,16 @@
+changelog:
+  categories:
+    - title: "Security guidance"
+      labels:
+        - "security"
+        - "skill"
+    - title: "Documentation"
+      labels:
+        - "documentation"
+    - title: "Dependencies and maintenance"
+      labels:
+        - "dependencies"
+        - "maintenance"
+    - title: "Other changes"
+      labels:
+        - "*"

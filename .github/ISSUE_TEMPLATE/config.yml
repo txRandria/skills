@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security-sensitive report
+    url: https://github.com/txRandria
+    about: Do not disclose vulnerabilities, secrets, or unsafe guidance publicly. Contact the maintainer privately.
+  - name: Contribution guide
+    url: https://github.com/txRandria/skills/blob/main/CONTRIBUTING.md
+    about: Read the contribution guide before opening a pull request.
