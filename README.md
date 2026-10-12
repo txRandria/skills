@@ -17,6 +17,17 @@ Si ce projet vous est utile, vous pouvez le soutenir avec une ⭐ et partager vo
 
 ---
 
+## Suite complémentaire : chiffrage et architecture cloud
+
+La branche propose aussi onze skills pour produire des chiffrages homogènes
+en XLSX : infrastructure, CI/CD, sécurité serveur, FinOps, capacité, migration,
+Kubernetes, choix d'architecture, comparaison de providers et diagrammes cloud.
+
+Consultez le [guide complet d'utilisation](docs/guide-cloud-estimation.md) pour
+choisir le bon skill, préparer le brief et contrôler les JH, coûts, hypothèses
+et sources. Pour un besoin multidomaine, commencez par
+`cloud-estimation-orchestrator`.
+
 ## Pourquoi
 
 La plupart des guides de sécurité listent des règles. Le problème n'est presque

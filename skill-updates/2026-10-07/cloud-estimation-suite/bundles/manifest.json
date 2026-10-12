@@ -1,0 +1,60 @@
+{
+  "bundles": {
+    "cicd-devsecops-estimator.skill": {
+      "member_count": 17,
+      "sha256": "632c330817e5e6c98db826e4f7e15957b5feb988932df76cbb1e3a4cb127e64e",
+      "uncompressed_size": 810380
+    },
+    "cloud-architecture-advisor.skill": {
+      "member_count": 17,
+      "sha256": "e2f0dc38d5bc533ebb9300ab5def8d824c2967ab1143a1a752e488443854a17f",
+      "uncompressed_size": 811748
+    },
+    "cloud-architecture-diagrammer.skill": {
+      "member_count": 18,
+      "sha256": "9690021c7a7ae7424c5e671f30bafb82bec6b7eb68bae5667e7284daa63596c2",
+      "uncompressed_size": 807504
+    },
+    "cloud-estimation-orchestrator.skill": {
+      "member_count": 17,
+      "sha256": "844a05bf799caedcecf4400ba875c9aa7a65a723fc581140d6ecd31be9b844ce",
+      "uncompressed_size": 814761
+    },
+    "cloud-migration-estimator.skill": {
+      "member_count": 17,
+      "sha256": "80fb0d838913a8612b1c67051cada023271847edb9dfdac663b14c481ac14693",
+      "uncompressed_size": 808202
+    },
+    "cloud-provider-selector.skill": {
+      "member_count": 17,
+      "sha256": "8ec8f8c3ced9f2f4a02bf2f1126c9f670ff7eafffa90664ba04dd8bd91343a71",
+      "uncompressed_size": 808895
+    },
+    "finops-optimizer.skill": {
+      "member_count": 17,
+      "sha256": "6f0ffe8c01511ac69756b27bedaa1a79f77c6c2777be4e406068fc1a9181b333",
+      "uncompressed_size": 811143
+    },
+    "hosting-capacity-simulator.skill": {
+      "member_count": 18,
+      "sha256": "011eabe9a71fbf23c6442c0b833a511074c6b39fc4f0b11b6d6fd11982e9607f",
+      "uncompressed_size": 814257
+    },
+    "infra-work-estimator.skill": {
+      "member_count": 17,
+      "sha256": "8e73a61f730168ad93223e81ac629a21e92f1fcf97fe2e91069d34c3728bba5c",
+      "uncompressed_size": 809976
+    },
+    "kubernetes-architect.skill": {
+      "member_count": 17,
+      "sha256": "bfe3a04c44878afc8f36f563d29966a267ac1abca81238f38c82eabc1102b3c4",
+      "uncompressed_size": 808392
+    },
+    "server-hardening-estimator.skill": {
+      "member_count": 17,
+      "sha256": "272507ecd3c5653562adc6b14c4140f6c81ee5e772f15e006a55828dffa1f7aa",
+      "uncompressed_size": 811833
+    }
+  },
+  "version": 1
+}
