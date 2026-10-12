@@ -16,6 +16,16 @@ Created by **[Tahina Fabien RANDRIAMAMPIANINA](https://www.linkedin.com/in/fabie
 
 If this project helps your team, please give it a star and share concrete feedback through [GitHub Issues](https://github.com/txRandria/skills/issues).
 
+## Companion suite: cloud estimation and architecture
+
+This branch also provides eleven skills for homogeneous XLSX estimates across
+infrastructure, CI/CD, server security, FinOps, capacity, migration, Kubernetes,
+architecture selection, provider comparison and cloud diagrams.
+
+Read the [complete user guide](docs/cloud-estimation-guide.md) to choose a skill,
+prepare the brief and review effort, costs, assumptions and sources. Start with
+`cloud-estimation-orchestrator` for a multi-domain request.
+
 ## Skills
 
 | Skill | Trigger | Coverage |
