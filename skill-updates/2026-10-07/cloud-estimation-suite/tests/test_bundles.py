@@ -76,6 +76,17 @@ def test_cli_builds_exact_registry_and_reproducible_manifest(builds):
             }
 
 
+def test_shipped_bundles_match_a_fresh_deterministic_build(builds):
+    shipped = ROOT / "bundles"
+    expected = {f"{name}.skill" for name in SKILLS} | {"manifest.json"}
+    assert {path.name for path in shipped.iterdir()} == expected
+    stale = [
+        filename for filename in sorted(expected)
+        if (shipped / filename).read_bytes() != (builds[0] / filename).read_bytes()
+    ]
+    assert stale == [], f"Shipped bundles differ from current source: {stale}"
+
+
 @pytest.mark.parametrize("name", SKILLS)
 def test_every_bundle_contains_all_delivered_bytes_with_safe_deterministic_metadata(name, builds):
     directory = ROOT / name
