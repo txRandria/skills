@@ -2,3 +2,5 @@
 Thumbs.db
 *.bak
 *.tmp
+__pycache__/
+*.pyc
